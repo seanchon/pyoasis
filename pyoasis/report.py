@@ -232,6 +232,19 @@ class OASISReport:
         """
         return pd.DataFrame(self.flattened_report_dict)
 
+    @property
+    def dataframe_columns(self):
+        """
+        Return dataframe columns.
+        """
+        return self.report_dataframe.columns
+
+    def get_unique_values(self, dataframe_column):
+        """
+        Return unique values from a dataframe_column.
+        """
+        return getattr(self.report_dataframe, dataframe_column).unique()
+
     def to_xml(self):
         """
         Returns self.report_dict as XML.

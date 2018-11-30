@@ -66,7 +66,7 @@ def create_oasis_url(report_name, start=None, end=None, query_params={}):
     # add report query
     querystring += "&" + report_query + "=" + report_name
 
-    return oasis_url + querystring
+    return "http://" + oasis_url + "?" + querystring
 
 
 def download_files(url, destination_directory):
@@ -86,7 +86,8 @@ def download_files(url, destination_directory):
 
     # return absolute paths of all files
     return [
-        os.abspath(destination_directory) + "/" + x for x in zipfile.namelist()
+        os.path.abspath(destination_directory) + "/" + x
+        for x in zipfile.namelist()
     ]
 
 
@@ -99,3 +100,25 @@ def xml_to_dict(xml_path):
     """
     with open(xml_path) as f:
         return xmltodict.parse(f.read())
+
+
+def get_report_params(report_name):
+    """
+    Filters oasis_endpoints.json file and returns sample params for a report
+    query harvested from the API docs.
+    """
+    with open(OASIS_ENDPOINTS_JSON) as f:
+        all_endpoints_dict = json.load(f)
+
+    for domain, domain_dict in all_endpoints_dict.items():
+        for path, path_dict in domain_dict.items():
+            if report_name in path_dict.keys():
+                return {
+                    domain: {
+                        path: {
+                            report_name: all_endpoints_dict[domain][path][
+                                report_name
+                            ]
+                        }
+                    }
+                }

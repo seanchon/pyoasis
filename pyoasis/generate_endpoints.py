@@ -151,6 +151,10 @@ def create_endpoints_dict(endpoint_file=ENDPOINT_FILE):
             all_endpoints_dict[domain][path][report] = {}
 
         # add params
-        all_endpoints_dict[domain][path][report] = endpoint_dict["params"]
+        if not all_endpoints_dict[domain][path].get(report):
+            all_endpoints_dict[domain][path][report] = []
+        all_endpoints_dict[domain][path][report].append(
+            endpoint_dict["params"]
+        )
 
     return all_endpoints_dict

@@ -1,783 +1,1886 @@
 {
     "oasis.caiso.com": {
         "/oasisapi/GroupZip": {
-            "PUB_CB_DAM_GRP": {
-                "groupid": "PUB_CB_DAM_GRP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "2"
-            },
-            "PUB_CRR_BID_MONTHLY_GRP": {
-                "groupid": "PUB_CRR_BID_MONTHLY_GRP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PUB_CRR_BID_SEASONAL_GRP": {
-                "groupid": "PUB_CRR_BID_SEASONAL_GRP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PUB_DAM_GRP": {
-                "groupid": "PUB_DAM_GRP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PUB_RTM_GRP": {
-                "groupid": "PUB_RTM_GRP",
-                "startdatetime": "20160919T07:00-0000",
-                "version": "2"
-            }
+            "PUB_CB_DAM_GRP": [
+                {
+                    "groupid": "PUB_CB_DAM_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "groupid": "PUB_CB_DAM_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "PUB_CRR_BID_MONTHLY_GRP": [
+                {
+                    "groupid": "PUB_CRR_BID_MONTHLY_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PUB_CRR_BID_SEASONAL_GRP": [
+                {
+                    "groupid": "PUB_CRR_BID_SEASONAL_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PUB_DAM_GRP": [
+                {
+                    "groupid": "PUB_DAM_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PUB_RTM_GRP": [
+                {
+                    "groupid": "PUB_RTM_GRP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "groupid": "PUB_RTM_GRP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "2"
+                }
+            ]
         },
         "/oasisapi/SingleZip": {
-            "AGGR_OUTAGE_SCH": {
-                "enddatetime": "20130920T07:00-0000",
-                "fuel_category": "Renewable",
-                "queryname": "AGGR_OUTAGE_SCH",
-                "startdatetime": "20130919T07:00-0000",
-                "trading_hub": "NP15",
-                "version": "1"
-            },
-            "AS_MILEAGE_CALC": {
-                "anc_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "AS_MILEAGE_CALC",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "AS_OP_RSRV": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "AS_OP_RSRV",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "AS_REQ": {
-                "anc_region": "ALL",
-                "anc_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "AS_REQ",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "AS_RESULTS": {
-                "anc_region": "ALL",
-                "anc_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "AS_RESULTS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_APNODE": {
-                "APnode_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_APNODE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_AS_REGION_MAP": {
-                "as_region_id": "A54_CNTR",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_AS_REGION_MAP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_BAA_TIE": {
-                "FROM_BAA_ID": "AZPS",
-                "TO_BAA_ID": "ARIZ",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_BAA_TIE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_CBNODE": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_CBNODE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "2"
-            },
-            "ATL_HUB": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_HUB",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_ISL_TIE": {
-                "TIE_NAME": "MALIN500",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_ISL_TIE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_ITC_SP": {
-                "TIEPOINT_NAME": "ADLANTO-SP_ITC",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_ITC_SP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_LAP": {
-                "APnode_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_LAP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_LDF": {
-                "apnode_id": "AGRICO_6_PL3N5_APND",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_LDF",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_OSM": {
-                "enddatetime": "20130920T07:00-0000",
-                "msg_severity": "ALL",
-                "queryname": "ATL_OSM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_PEAK_ON_OFF": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_PEAK_ON_OFF",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_PNODE": {
-                "Pnode_id": "12THST_6_N101",
-                "Pnode_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_PNODE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_PNODE_MAP": {
-                "enddatetime": "20130920T07:00-0000",
-                "pnode_id": "KEARNY_7_KY2D",
-                "queryname": "ATL_PNODE_MAP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_PRC_CORR_MSG": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "ATL_PRC_CORR_MSG",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_PUB": {
-                "atlpubversion": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "oasis_section": "ALL",
-                "queryname": "ATL_PUB",
-                "startdatetime": "20130919T07:00-0000",
-                "status": "ALL",
-                "version": "1"
-            },
-            "ATL_PUB_SCHED": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "oasis_section": "ALL",
-                "publication_type": "ALL",
-                "queryname": "ATL_PUB_SCHED",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_RESOURCE": {
-                "agge_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_RESOURCE",
-                "resource_id": "8MILE_2_V200LD",
-                "resource_type": "ALL",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_RUC_ZONE_MAP": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_RUC_ZONE_MAP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_SP": {
-                "BAA_ID": "CISO",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_SP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_SP_TIE": {
-                "TIE_NAME": "AMARGOSA230",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_SP_TIE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "ATL_TAC_AREA_MAP": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_TAC_AREA_MAP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ATL_TI": {
-                "Ti_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_TI",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1",
-                "wecc_path": "ALL"
-            },
-            "ATL_TIEPOINT": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ATL_TIEPOINT",
-                "resource_type": "ALL",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "CB_NODAL_GRP_CNSTR_PRC": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "CB_NODAL_GRP_CNSTR_PRC",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "CB_NODAL_LIMITS": {
-                "enddatetime": "20130920T07:00-0000",
-                "node_id": "RNCHSECO_2_N108",
-                "queryname": "CB_NODAL_LIMITS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "CMMT_RA_MLC": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "CMMT_RA_MLC",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "CMMT_RMR": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "CMMT_RMR",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "CRR_CLEARING": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_name": "ALL",
-                "market_term": "ALL",
-                "queryname": "CRR_CLEARING",
-                "startdatetime": "20130919T07:00-0000",
-                "time_of_use": "ALL",
-                "version": "1"
-            },
-            "CRR_INVENTORY": {
-                "enddatetime": "20130925T07:00-0000",
-                "market_name": "ALLOC_AN_2013_S03_TR",
-                "market_term": "ALL",
-                "queryname": "CRR_INVENTORY",
-                "startdatetime": "20130924T07:00-0000",
-                "time_of_use": "ALL",
-                "version": "1"
-            },
-            "ENE_AGGR_FLEX_RAMP": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20160402T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "ENE_AGGR_FLEX_RAMP",
-                "startdatetime": "20160401T07:00-0000",
-                "version": "4"
-            },
-            "ENE_BASE_NSI": {
-                "baa_id": "ALL",
-                "enddatetime": "20141002T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "ENE_BASE_NSI",
-                "snapshot_indicator": "T75MIN",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_CB_AWARDS": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ENE_CB_AWARDS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ENE_CB_CLR_AWARDS": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ENE_CB_CLR_AWARDS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ENE_CB_MKT_SUM": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ENE_CB_MKT_SUM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ENE_CD_SLRS": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "ENE_CD_SLRS",
-                "schedule": "ALL",
-                "startdatetime": "20130919T07:00-0000",
-                "tac_zone_name": "ALL",
-                "version": "1"
-            },
-            "ENE_DISP": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "ENE_DISP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ENE_EA": {
-                "enddatetime": "20130920T07:00-0000",
-                "energy_type": "ALL",
-                "opr_interval": "ALL",
-                "queryname": "ENE_EA",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "2"
-            },
-            "ENE_EIM_DYN_NSI": {
-                "baa_id": "ALL",
-                "enddatetime": "20141002T07:00-0000",
-                "market_run_id": "ALL",
-                "queryname": "ENE_EIM_DYN_NSI",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_EIM_TRANSFER": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20141002T07:00-0000",
-                "market_run_id": "ALL",
-                "queryname": "ENE_EIM_TRANSFER",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_EIM_TRANSFER_LIMITS": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20141002T07:00-0000",
-                "market_run_id": "ALL",
-                "queryname": "ENE_EIM_TRANSFER_LIMITS",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_EIM_TRANSFER_LIMITS_TIE": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20161002T07:00-0000",
-                "market_run_id": "RTPD",
-                "queryname": "ENE_EIM_TRANSFER_LIMITS_TIE",
-                "startdatetime": "20161001T07:00-0000",
-                "version": "5"
-            },
-            "ENE_EIM_TRANSFER_TIE": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20161002T07:00-0000",
-                "market_run_id": "ALL",
-                "queryname": "ENE_EIM_TRANSFER_TIE",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "4"
-            },
-            "ENE_FLEX_RAMP_DC": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20160402T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "ENE_FLEX_RAMP_DC",
-                "startdatetime": "20160401T07:00-0000",
-                "version": "4"
-            },
-            "ENE_FLEX_RAMP_REQT": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20160402T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "ENE_FLEX_RAMP_REQT",
-                "startdatetime": "20160401T07:00-0000",
-                "version": "4"
-            },
-            "ENE_HRLY_BASE_LOSS": {
-                "baa_id": "ALL",
-                "enddatetime": "20161002T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "ENE_HRLY_BASE_LOSS",
-                "snapshot_indicator": "ALL",
-                "startdatetime": "20161001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_HRLY_BASE_NSI": {
-                "baa_id": "ALL",
-                "enddatetime": "20161002T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "ENE_HRLY_BASE_NSI",
-                "snapshot_indicator": "ALL",
-                "startdatetime": "20161001T07:00-0000",
-                "version": "2"
-            },
-            "ENE_LOSS": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "ENE_LOSS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "ENE_MPM": {
-                "baa_id": "ALL",
-                "enddatetime": "20161002T07:00-0000",
-                "execution_type": "RTD",
-                "mark_run_id": "RTM",
-                "queryname": "ENE_MPM",
-                "startdatetime": "20161001T07:00-0000",
-                "version": "4"
-            },
-            "ENE_SLRS": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "ENE_SLRS",
-                "schedule": "ALL",
-                "startdatetime": "20130919T07:00-0000",
-                "tac_zone_name": "ALL",
-                "version": "1"
-            },
-            "ENE_UNCERTAINTY_MV": {
-                "baa_grp_id": "ALL",
-                "enddatetime": "20160402T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "ENE_UNCERTAINTY_MV",
-                "startdatetime": "20160401T07:00-0000",
-                "version": "4"
-            },
-            "ENE_WIND_SOLAR_SUMMARY": {
-                "enddatetime": "20161002T07:00-0000",
-                "queryname": "ENE_WIND_SOLAR_SUMMARY",
-                "startdatetime": "20161001T07:00-0000",
-                "version": "5"
-            },
-            "PRC_AS": {
-                "anc_region": "ALL",
-                "anc_type": "ALL",
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "PRC_AS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_CD_INTVL_LMP": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_CD_INTVL_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_CD_RTM_FLOWGATE": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "PRC_CD_RTM_FLOWGATE",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "PRC_CD_RTM_NOMOGRAM": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "nomogram_id": "ALL",
-                "queryname": "PRC_CD_RTM_NOMOGRAM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_CD_SPTIE_LMP": {
-                "enddatetime": "20160920T07:00-0000",
-                "market_run_id": "RTM",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_CD_SPTIE_LMP",
-                "startdatetime": "20160919T07:00-0000",
-                "version": "4"
-            },
-            "PRC_CNSTR": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "PRC_CNSTR",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "PRC_CURR_HUB_LMP": {
-                "queryname": "PRC_CURR_HUB_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_CURR_LMP": {
-                "enddatetime": "20130919T07:00-0000",
-                "node": "ALL",
-                "queryname": "PRC_CURR_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "2"
-            },
-            "PRC_DS_REF": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "node_id": "ALL",
-                "queryname": "PRC_DS_REF",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "PRC_EIM_GHG": {
-                "enddatetime": "20141002T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "PRC_EIM_GHG",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "PRC_FLEX_RAMP": {
-                "baa_grp_id": "PACE",
-                "enddatetime": "20141002T07:00-0000",
-                "grp_type": "CURR",
-                "market_run_id": "RTD",
-                "queryname": "PRC_FLEX_RAMP",
-                "startdatetime": "20141001T07:00-0000",
-                "version": "2"
-            },
-            "PRC_FUEL": {
-                "enddatetime": "20130920T07:00-0000",
-                "fuel_region_id": "ALL",
-                "queryname": "PRC_FUEL",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_GHG_ALLOWANCE": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "PRC_GHG_ALLOWANCE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_HASP_LMP": {
-                "enddatetime": "20130919T08:00-0000",
-                "market_run_id": "HASP",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_HASP_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "PRC_INTVL_AS": {
-                "anc_region": "ALL",
-                "anc_type": "ALL",
-                "enddatetime": "20130919T08:00-0000",
-                "market_run_id": "RTM",
-                "queryname": "PRC_INTVL_AS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_INTVL_LMP": {
-                "enddatetime": "20130919T08:00-0000",
-                "market_run_id": "RTM",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_INTVL_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "PRC_MPM_CNSTR": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "PRC_MPM_CNSTR",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "PRC_MPM_CNSTR_CMP": {
-                "enddatetime": "20170214T08:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "PRC_MPM_CNSTR_CMP",
-                "startdatetime": "20170213T08:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_DEFAULT_CMP": {
-                "market_run_id": "RTM",
-                "queryname": "PRC_MPM_DEFAULT_CMP"
-            },
-            "PRC_MPM_LMP": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "node": "3EMIDIO_6_N001",
-                "queryname": "PRC_MPM_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_NOMOGRAM": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "nomogram_id": "ALL",
-                "queryname": "PRC_MPM_NOMOGRAM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_NOMOGRAM_CMP": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "PRC_MPM_NOMOGRAM_CMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_REF_BUS": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "PRC_MPM_REF_BUS",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_RTM_FLOWGATE": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTPD",
-                "queryname": "PRC_MPM_RTM_FLOWGATE",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "PRC_MPM_RTM_LMP": {
-                "enddatetime": "20130919T08:00-0000",
-                "market_run_id": "RTPD",
-                "node": "3EMIDIO_6_N001",
-                "queryname": "PRC_MPM_RTM_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "2"
-            },
-            "PRC_MPM_RTM_NOMOGRAM": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTPD",
-                "nomogram_id": "ALL",
-                "queryname": "PRC_MPM_RTM_NOMOGRAM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_RTM_NOMOGRAM_CMP": {
-                "enddatetime": "20170214T08:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "PRC_MPM_RTM_NOMOGRAM_CMP",
-                "startdatetime": "20170213T08:00-0000",
-                "version": "1"
-            },
-            "PRC_MPM_RTM_REF_BUS": {
-                "enddatetime": "20170214T08:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "PRC_MPM_RTM_REF_BUS",
-                "startdatetime": "20170213T08:00-0000",
-                "version": "1"
-            },
-            "PRC_NOMOGRAM": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "nomogram_id": "ALL",
-                "queryname": "PRC_NOMOGRAM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_RTM_FLOWGATE": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "node": "ALL",
-                "queryname": "PRC_RTM_FLOWGATE",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_RTM_NOMOGRAM": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTM",
-                "nomogram_id": "ALL",
-                "queryname": "PRC_RTM_NOMOGRAM",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "PRC_RTM_SCH_CNSTR": {
-                "enddatetime": "20160920T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "PRC_RTM_SCH_CNSTR",
-                "sch_cnstr_id": "ALL",
-                "startdatetime": "20160919T07:00-0000",
-                "version": "4"
-            },
-            "PRC_RTPD_LMP": {
-                "enddatetime": "20130919T08:00-0000",
-                "market_run_id": "RTPD",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_RTPD_LMP",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "3"
-            },
-            "PRC_SPTIE_LMP": {
-                "enddatetime": "20160919T08:00-0000",
-                "market_run_id": "RTD",
-                "node": "LAPLMG1_7_B2",
-                "queryname": "PRC_SPTIE_LMP",
-                "startdatetime": "20160919T07:00-0000",
-                "version": "5"
-            },
-            "SLD_ADV_FCST": {
-                "enddatetime": "20160420T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "SLD_ADV_FCST",
-                "startdatetime": "20160419T07:00-0000",
-                "version": "4"
-            },
-            "SLD_FCST": {
-                "enddatetime": "20130920T07:00-0000",
-                "execution_type": "RTPD",
-                "market_run_id": "RTM",
-                "queryname": "SLD_FCST",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "SLD_FCST_PEAK": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "SLD_FCST_PEAK",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "SLD_REN_FCST": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTD",
-                "queryname": "SLD_REN_FCST",
-                "startdatetime": "20130919T07:00-0000",
-                "version": "1"
-            },
-            "SLD_SF_EVAL_DMD_FCST": {
-                "enddatetime": "20160420T07:00-0000",
-                "granularity": "15MIN",
-                "queryname": "SLD_SF_EVAL_DMD_FCST",
-                "startdatetime": "20160419T07:00-0000",
-                "version": "4"
-            },
-            "TRNS_ATC": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "RTPD",
-                "queryname": "TRNS_ATC",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_direction": "ALL",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "TRNS_CURR_USAGE": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "TRNS_CURR_USAGE",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_direction": "ALL",
-                "ti_id": "ALL",
-                "tr_type": "TRNS_AS_IMPORT_IFM",
-                "version": "1"
-            },
-            "TRNS_OUTAGE": {
-                "enddatetime": "20130920T07:00-0000",
-                "queryname": "TRNS_OUTAGE",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_direction": "ALL",
-                "ti_id": "ALL",
-                "version": "1"
-            },
-            "TRNS_USAGE": {
-                "enddatetime": "20130920T07:00-0000",
-                "market_run_id": "DAM",
-                "queryname": "TRNS_USAGE",
-                "startdatetime": "20130919T07:00-0000",
-                "ti_direction": "ALL",
-                "ti_id": "ALL",
-                "tr_type": "TRNS_AS_IMPORT_IFM",
-                "version": "1"
-            }
+            "AGGR_OUTAGE_SCH": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "fuel_category": "Renewable",
+                    "queryname": "AGGR_OUTAGE_SCH",
+                    "startdatetime": "20130919T07:00-0000",
+                    "trading_hub": "NP15",
+                    "version": "1"
+                }
+            ],
+            "AS_MILEAGE_CALC": [
+                {
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "AS_MILEAGE_CALC",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "AS_OP_RSRV": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "AS_OP_RSRV",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "AS_REQ": [
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "AS_REQ",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "AS_REQ",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "AS_REQ",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "AS_RESULTS": [
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "AS_RESULTS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "AS_RESULTS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "AS_RESULTS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_APNODE": [
+                {
+                    "APnode_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_APNODE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_AS_REGION_MAP": [
+                {
+                    "as_region_id": "A54_CNTR",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_AS_REGION_MAP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_BAA_TIE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_BAA_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "FROM_BAA_ID": "AZPS",
+                    "TO_BAA_ID": "ARIZ",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_BAA_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_CBNODE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_CBNODE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ATL_HUB": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_HUB",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_ISL_TIE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_ISL_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "TIE_NAME": "MALIN500",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_ISL_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_ITC_SP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_ITC_SP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "TIEPOINT_NAME": "ADLANTO-SP_ITC",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_ITC_SP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_LAP": [
+                {
+                    "APnode_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_LAP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_LDF": [
+                {
+                    "apnode_id": "AGRICO_6_PL3N5_APND",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_LDF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_OSM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "msg_severity": "ALL",
+                    "queryname": "ATL_OSM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_PEAK_ON_OFF": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_PEAK_ON_OFF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_PNODE": [
+                {
+                    "Pnode_id": "12THST_6_N101",
+                    "Pnode_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_PNODE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_PNODE_MAP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "pnode_id": "KEARNY_7_KY2D",
+                    "queryname": "ATL_PNODE_MAP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_PRC_CORR_MSG": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_PRC_CORR_MSG",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ATL_PRC_CORR_MSG",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_PUB": [
+                {
+                    "atlpubversion": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "oasis_section": "ALL",
+                    "queryname": "ATL_PUB",
+                    "startdatetime": "20130919T07:00-0000",
+                    "status": "ALL",
+                    "version": "1"
+                }
+            ],
+            "ATL_PUB_SCHED": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "oasis_section": "ALL",
+                    "publication_type": "ALL",
+                    "queryname": "ATL_PUB_SCHED",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_RESOURCE": [
+                {
+                    "agge_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_RESOURCE",
+                    "resource_id": "8MILE_2_V200LD",
+                    "resource_type": "ALL",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_RUC_ZONE_MAP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_RUC_ZONE_MAP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_SP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_SP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "BAA_ID": "CISO",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_SP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_SP_TIE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_SP_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "TIE_NAME": "AMARGOSA230",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_SP_TIE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "ATL_TAC_AREA_MAP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_TAC_AREA_MAP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ATL_TI": [
+                {
+                    "Ti_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_TI",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1",
+                    "wecc_path": "ALL"
+                }
+            ],
+            "ATL_TIEPOINT": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ATL_TIEPOINT",
+                    "resource_type": "ALL",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "CB_NODAL_GRP_CNSTR_PRC": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "CB_NODAL_GRP_CNSTR_PRC",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "CB_NODAL_LIMITS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "node_id": "RNCHSECO_2_N108",
+                    "queryname": "CB_NODAL_LIMITS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "CMMT_RA_MLC": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "CMMT_RA_MLC",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "CMMT_RMR": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "CMMT_RMR",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "CRR_CLEARING": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_name": "ALL",
+                    "market_term": "ALL",
+                    "queryname": "CRR_CLEARING",
+                    "startdatetime": "20130919T07:00-0000",
+                    "time_of_use": "ALL",
+                    "version": "1"
+                }
+            ],
+            "CRR_INVENTORY": [
+                {
+                    "enddatetime": "20130925T07:00-0000",
+                    "market_name": "ALLOC_AN_2013_S03_TR",
+                    "market_term": "ALL",
+                    "queryname": "CRR_INVENTORY",
+                    "startdatetime": "20130924T07:00-0000",
+                    "time_of_use": "ALL",
+                    "version": "1"
+                }
+            ],
+            "ENE_AGGR_FLEX_RAMP": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_AGGR_FLEX_RAMP",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_AGGR_FLEX_RAMP",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_BASE_NSI": [
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_BASE_NSI",
+                    "snapshot_indicator": "DA",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_BASE_NSI",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_BASE_NSI",
+                    "snapshot_indicator": "T75MIN",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_CB_AWARDS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ENE_CB_AWARDS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ENE_CB_CLR_AWARDS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ENE_CB_CLR_AWARDS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ENE_CB_MKT_SUM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ENE_CB_MKT_SUM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ENE_CD_SLRS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_CD_SLRS",
+                    "schedule": "ALL",
+                    "startdatetime": "20130919T07:00-0000",
+                    "tac_zone_name": "ALL",
+                    "version": "1"
+                }
+            ],
+            "ENE_DISP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "ENE_DISP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ENE_EA": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "energy_type": "ALL",
+                    "opr_interval": "ALL",
+                    "queryname": "ENE_EA",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "energy_type": "ALL",
+                    "opr_interval": "ALL",
+                    "queryname": "ENE_EA",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_EIM_DYN_NSI": [
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_EIM_DYN_NSI",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_EIM_DYN_NSI",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "ALL",
+                    "queryname": "ENE_EIM_DYN_NSI",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_EIM_TRANSFER": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_EIM_TRANSFER",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_EIM_TRANSFER",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "ALL",
+                    "queryname": "ENE_EIM_TRANSFER",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_EIM_TRANSFER_LIMITS": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_EIM_TRANSFER_LIMITS",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_EIM_TRANSFER_LIMITS",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "ALL",
+                    "queryname": "ENE_EIM_TRANSFER_LIMITS",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_EIM_TRANSFER_LIMITS_TIE": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_EIM_TRANSFER_LIMITS_TIE",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_EIM_TRANSFER_LIMITS_TIE",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "5"
+                }
+            ],
+            "ENE_EIM_TRANSFER_TIE": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_EIM_TRANSFER_TIE",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_EIM_TRANSFER_TIE",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "ALL",
+                    "queryname": "ENE_EIM_TRANSFER_TIE",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_FLEX_RAMP_DC": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_FLEX_RAMP_DC",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_FLEX_RAMP_DC",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_FLEX_RAMP_REQT": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_FLEX_RAMP_REQT",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "ENE_FLEX_RAMP_REQT",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_FLEX_RAMP_REQT",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_HRLY_BASE_LOSS": [
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_HRLY_BASE_LOSS",
+                    "snapshot_indicator": "ALL",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_HRLY_BASE_LOSS",
+                    "snapshot_indicator": "ALL",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_HRLY_BASE_NSI": [
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_HRLY_BASE_NSI",
+                    "snapshot_indicator": "ALL",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_HRLY_BASE_NSI",
+                    "snapshot_indicator": "ALL",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "ENE_LOSS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_LOSS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "ENE_MPM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "execution_type": "HASP",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "execution_type": "RTPD",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "execution_type": "HASP",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20141002T07:00-0000",
+                    "execution_type": "RTPD",
+                    "market_run_id": "RTM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "baa_id": "ALL",
+                    "enddatetime": "20161002T07:00-0000",
+                    "execution_type": "RTD",
+                    "mark_run_id": "RTM",
+                    "queryname": "ENE_MPM",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_SLRS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "ENE_SLRS",
+                    "schedule": "ALL",
+                    "startdatetime": "20130919T07:00-0000",
+                    "tac_zone_name": "ALL",
+                    "version": "1"
+                }
+            ],
+            "ENE_UNCERTAINTY_MV": [
+                {
+                    "baa_grp_id": "ALL",
+                    "enddatetime": "20160402T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "ENE_UNCERTAINTY_MV",
+                    "startdatetime": "20160401T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "ENE_WIND_SOLAR_SUMMARY": [
+                {
+                    "enddatetime": "20161002T07:00-0000",
+                    "queryname": "ENE_WIND_SOLAR_SUMMARY",
+                    "startdatetime": "20161001T07:00-0000",
+                    "version": "5"
+                }
+            ],
+            "PRC_AS": [
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_AS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_CD_INTVL_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_CD_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_CD_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_CD_RTM_FLOWGATE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_CD_RTM_FLOWGATE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "PRC_CD_RTM_NOMOGRAM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_CD_RTM_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_CD_SPTIE_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_CD_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_CD_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_CD_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "PRC_CNSTR": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_CNSTR",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "PRC_CURR_HUB_LMP": [
+                {
+                    "queryname": "PRC_CURR_HUB_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_CURR_LMP": [
+                {
+                    "enddatetime": "20130919T07:00-0000",
+                    "node": "ALL",
+                    "queryname": "PRC_CURR_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T07:00-0000",
+                    "node": "ALL",
+                    "queryname": "PRC_CURR_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "PRC_DS_REF": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node_id": "ALL",
+                    "queryname": "PRC_DS_REF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node_id": "LAPLMG1_7_B2",
+                    "queryname": "PRC_DS_REF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node_id": "DGAP_PGE-APND",
+                    "queryname": "PRC_DS_REF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node_id": "ALL",
+                    "queryname": "PRC_DS_REF",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "PRC_EIM_GHG": [
+                {
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_EIM_GHG",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20141002T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_EIM_GHG",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "PRC_FLEX_RAMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "baa_grp_id": "PACE",
+                    "enddatetime": "20141002T07:00-0000",
+                    "grp_type": "ALL",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "CURR",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "CURR",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "baa_grp_id": "PACE",
+                    "enddatetime": "20141002T07:00-0000",
+                    "grp_type": "CURR",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_FLEX_RAMP",
+                    "startdatetime": "20141001T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "PRC_FUEL": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "fuel_region_id": "ALL",
+                    "queryname": "PRC_FUEL",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_GHG_ALLOWANCE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "PRC_GHG_ALLOWANCE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_HASP_LMP": [
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "HASP",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "HASP",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "HASP",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_HASP_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "PRC_INTVL_AS": [
+                {
+                    "anc_region": "ALL",
+                    "anc_type": "ALL",
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_INTVL_AS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_INTVL_LMP": [
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_INTVL_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "PRC_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_CNSTR": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_CNSTR",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_CNSTR_CMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_CNSTR_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_CNSTR_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_CNSTR_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20170214T08:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_MPM_CNSTR_CMP",
+                    "startdatetime": "20170213T08:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_DEFAULT_CMP": [
+                {
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_DEFAULT_CMP"
+                },
+                {
+                    "market_run_id": "RTM",
+                    "queryname": "PRC_MPM_DEFAULT_CMP"
+                }
+            ],
+            "PRC_MPM_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node": "3EMIDIO_6_N001",
+                    "queryname": "PRC_MPM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_NOMOGRAM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_MPM_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_NOMOGRAM_CMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_NOMOGRAM_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_REF_BUS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_MPM_REF_BUS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_RTM_FLOWGATE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_RTM_FLOWGATE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_id": "ALL",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_RTM_FLOWGATE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_RTM_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130920T06:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "HASP",
+                    "node": "3EMIDIO_6_N001",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130920T06:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "HASP",
+                    "node": "3EMIDIO_6_N001",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130920T06:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "3EMIDIO_6_N001",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130920T06:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "3EMIDIO_6_N001",
+                    "queryname": "PRC_MPM_RTM_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                }
+            ],
+            "PRC_MPM_RTM_NOMOGRAM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_MPM_RTM_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_MPM_RTM_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_RTM_NOMOGRAM_CMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_RTM_NOMOGRAM_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_RTM_NOMOGRAM_CMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20170214T08:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_MPM_RTM_NOMOGRAM_CMP",
+                    "startdatetime": "20170213T08:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_MPM_RTM_REF_BUS": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "HASP",
+                    "queryname": "PRC_MPM_RTM_REF_BUS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_MPM_RTM_REF_BUS",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20170214T08:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_MPM_RTM_REF_BUS",
+                    "startdatetime": "20170213T08:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_NOMOGRAM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_RTM_FLOWGATE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "node": "ALL",
+                    "queryname": "PRC_RTM_FLOWGATE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_RTM_NOMOGRAM": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTM",
+                    "nomogram_id": "ALL",
+                    "queryname": "PRC_RTM_NOMOGRAM",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "PRC_RTM_SCH_CNSTR": [
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_RTM_SCH_CNSTR",
+                    "sch_cnstr_id": "ALL",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_RTM_SCH_CNSTR",
+                    "sch_cnstr_id": "ALL",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "PRC_RTPD_LMP": [
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "2"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_RTPD_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                }
+            ],
+            "PRC_SPTIE_LMP": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "3"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "market_run_id": "RTD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "DAM",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "enddatetime": "20160920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTPD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "enddatetime": "20130919T08:00-0000",
+                    "market_run_id": "RTPD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "grp_type": "ALL_APNODES",
+                    "market_run_id": "RTD",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "5"
+                },
+                {
+                    "enddatetime": "20160919T08:00-0000",
+                    "market_run_id": "RTD",
+                    "node": "LAPLMG1_7_B2",
+                    "queryname": "PRC_SPTIE_LMP",
+                    "startdatetime": "20160919T07:00-0000",
+                    "version": "5"
+                }
+            ],
+            "SLD_ADV_FCST": [
+                {
+                    "enddatetime": "20160420T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "SLD_ADV_FCST",
+                    "startdatetime": "20160419T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20160420T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "SLD_ADV_FCST",
+                    "startdatetime": "20160419T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "SLD_FCST": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "SLD_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "2DA",
+                    "queryname": "SLD_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "7DA",
+                    "queryname": "SLD_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "execution_type": "RTD",
+                    "market_run_id": "RTM",
+                    "queryname": "SLD_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "execution_type": "RTPD",
+                    "market_run_id": "RTM",
+                    "queryname": "SLD_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "SLD_FCST_PEAK": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "SLD_FCST_PEAK",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "SLD_REN_FCST": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "SLD_REN_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "SLD_REN_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTD",
+                    "queryname": "SLD_REN_FCST",
+                    "startdatetime": "20130919T07:00-0000",
+                    "version": "1"
+                }
+            ],
+            "SLD_SF_EVAL_DMD_FCST": [
+                {
+                    "enddatetime": "20160420T07:00-0000",
+                    "granularity": "HOURLY",
+                    "queryname": "SLD_SF_EVAL_DMD_FCST",
+                    "startdatetime": "20160419T07:00-0000",
+                    "version": "4"
+                },
+                {
+                    "enddatetime": "20160420T07:00-0000",
+                    "granularity": "15MIN",
+                    "queryname": "SLD_SF_EVAL_DMD_FCST",
+                    "startdatetime": "20160419T07:00-0000",
+                    "version": "4"
+                }
+            ],
+            "TRNS_ATC": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "TRNS_ATC",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "TRNS_ATC",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "TRNS_CURR_USAGE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "TRNS_CURR_USAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "TRNS_CURR_USAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "tr_type": "TRNS_AS_IMPORT_IFM",
+                    "version": "1"
+                }
+            ],
+            "TRNS_OUTAGE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "queryname": "TRNS_OUTAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                }
+            ],
+            "TRNS_USAGE": [
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "TRNS_USAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "RTPD",
+                    "queryname": "TRNS_USAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "version": "1"
+                },
+                {
+                    "enddatetime": "20130920T07:00-0000",
+                    "market_run_id": "DAM",
+                    "queryname": "TRNS_USAGE",
+                    "startdatetime": "20130919T07:00-0000",
+                    "ti_direction": "ALL",
+                    "ti_id": "ALL",
+                    "tr_type": "TRNS_AS_IMPORT_IFM",
+                    "version": "1"
+                }
+            ]
         }
     }
 }

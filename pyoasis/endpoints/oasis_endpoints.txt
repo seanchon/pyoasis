@@ -1,3 +1,5 @@
+oasis.caiso.com/oasisapi/SingleZip?queryname=PRC_LMP&startdatetime=20130919T07:00-0000&enddatetime=20130920T07:00-0000&version=1&market_run_id=DAM&grp_type=ALL_APNODES
+oasis.caiso.com/oasisapi/SingleZip?queryname=PRC_LMP&startdatetime=20130919T07:00-0000&enddatetime=20130920T07:00-0000&version=1&market_run_id=DAM&node=LAPLMG1_7_B2
 oasis.caiso.com/oasisapi/SingleZip?queryname=PRC_INTVL_LMP&startdatetime=20130919T07:00-0000&enddatetime=20130919T08:00-0000&version=1&market_run_id=RTM&grp_type=ALL_APNODES
 oasis.caiso.com/oasisapi/SingleZip?queryname=PRC_INTVL_LMP&startdatetime=20130919T07:00-0000&enddatetime=20130919T08:00-0000&version=1&market_run_id=RTM&node=LAPLMG1_7_B2
 oasis.caiso.com/oasisapi/SingleZip?queryname=PRC_INTVL_LMP&startdatetime=20130919T07:00-0000&enddatetime=20130919T08:00-0000&version=2&market_run_id=RTM&grp_type=ALL_APNODES
