@@ -6,7 +6,7 @@ from .utils import create_oasis_url, download_files, get_report_params
 
 # get location of oasis_endpoints.json file
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
-OASIS_ENDPOINTS_JSON = FILE_DIR + "/endpoints/oasis_endpoints.json"
+OASIS_ENDPOINTS_JSON = FILE_DIR + "/oasis_endpoints.json"
 
 
 def generate_test_oasis_urls(start=None, end=None, report_name=None):
@@ -34,31 +34,27 @@ def generate_test_oasis_urls(start=None, end=None, report_name=None):
                 for param_dict in param_dicts:
                     # delete start datetime from sample params
                     if param_dict.get("startdatetime"):
-                        del (param_dict["startdatetime"])
+                        del param_dict["startdatetime"]
 
                     # delete end datetime from sample params
                     if param_dict.get("enddatetime"):
-                        del (param_dict["enddatetime"])
+                        del param_dict["enddatetime"]
 
                     # delete report name from sample params
                     if param_dict.get("queryname"):
-                        del (param_dict["queryname"])
+                        del param_dict["queryname"]
                     if param_dict.get("groupid"):
-                        del (param_dict["groupid"])
+                        del param_dict["groupid"]
 
                     # generate url
                     endpoint_urls.append(
-                        create_oasis_url(
-                            report, start, end, query_params=param_dict
-                        )
+                        create_oasis_url(report, start, end, query_params=param_dict)
                     )
 
     return endpoint_urls
 
 
-def download_all_oasis_reports(
-    start, end, destination_directory, report_name=None
-):
+def download_all_oasis_reports(start, end, destination_directory, report_name=None):
     """
     Downloads all OASIS reports from a certain time period. This is a heavy
     query on the OASIS API and should only be run seldomly for validation

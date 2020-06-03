@@ -9,7 +9,7 @@ from zipfile import ZipFile
 
 # get location of oasis_endpoints.json file
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
-OASIS_ENDPOINTS_JSON = FILE_DIR + "/endpoints/oasis_endpoints.json"
+OASIS_ENDPOINTS_JSON = FILE_DIR + "/oasis_endpoints.json"
 
 
 def format_datetime(datetime_, _timezone=timezone("US/Pacific")):
@@ -55,9 +55,7 @@ def create_oasis_url(report_name, start=None, end=None, query_params={}):
         report_query = "groupid"
 
     # construct additional paramaters
-    querystring = "&".join(
-        [str(x) + "=" + str(y) for x, y in query_params.items()]
-    )
+    querystring = "&".join([str(x) + "=" + str(y) for x, y in query_params.items()])
     if start:
         querystring += "&startdatetime={}".format(format_datetime(start))
     if end:
@@ -78,6 +76,7 @@ def download_files(url, destination_directory):
     :param destination_directory: (string)
     :return: absolute paths of all files (list of strings)
     """
+    destination_directory = os.path.abspath(os.path.expanduser(destination_directory))
 
     # pull data from url and save to destination_directory
     response = requests.get(url)
@@ -85,10 +84,7 @@ def download_files(url, destination_directory):
     zipfile.extractall(destination_directory)
 
     # return absolute paths of all files
-    return [
-        os.path.abspath(destination_directory) + "/" + x
-        for x in zipfile.namelist()
-    ]
+    return [destination_directory + "/" + x for x in zipfile.namelist()]
 
 
 def xml_to_dict(xml_path):
@@ -116,9 +112,7 @@ def get_report_params(report_name):
                 return {
                     domain: {
                         path: {
-                            report_name: all_endpoints_dict[domain][path][
-                                report_name
-                            ]
+                            report_name: all_endpoints_dict[domain][path][report_name]
                         }
                     }
                 }

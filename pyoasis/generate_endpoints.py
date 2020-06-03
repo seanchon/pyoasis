@@ -6,10 +6,9 @@ import re
 # get location of API docs
 FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 OASIS_API_DOC = (
-    FILE_DIR
-    + "/api_docs/InterfaceSpecification_v4_3_5Clean_Spring2017Release.pdf"
+    FILE_DIR + "/api_docs/InterfaceSpecification_v4_3_5Clean_Spring2017Release.pdf"
 )
-ENDPOINT_FILE = FILE_DIR + "/endpoints/oasis_endpoints.txt"
+ENDPOINT_FILE = FILE_DIR + "/oasis_endpoints.txt"
 
 
 def match_pages(search_string, oasis_api_doc=OASIS_API_DOC):
@@ -26,9 +25,7 @@ def match_pages(search_string, oasis_api_doc=OASIS_API_DOC):
     return [x for x in pdf if search_string in x]
 
 
-def scrape_endpoint_urls(
-    min_page_num=47, max_page_num=65, oasis_api_doc=OASIS_API_DOC
-):
+def scrape_endpoint_urls(min_page_num=47, max_page_num=65, oasis_api_doc=OASIS_API_DOC):
     """
     This function makes a best attempt to extract endpoint urls from
     oasis_api_doc and returns found endpoints as a list. The list needs a
@@ -121,7 +118,7 @@ def create_endpoints_dict(endpoint_file=ENDPOINT_FILE):
     """
     Turns a file with OASIS endpoints into a dictionary organized by endpoint
     paths and params. The output of this function is used to generate
-    endpoints/oasis_endpoints.json.
+    oasis_endpoints.json.
 
     :param endpoint_file: file of OASIS endpoints separated by newlines
     :return: dictionary
@@ -153,8 +150,6 @@ def create_endpoints_dict(endpoint_file=ENDPOINT_FILE):
         # add params
         if not all_endpoints_dict[domain][path].get(report):
             all_endpoints_dict[domain][path][report] = []
-        all_endpoints_dict[domain][path][report].append(
-            endpoint_dict["params"]
-        )
+        all_endpoints_dict[domain][path][report].append(endpoint_dict["params"])
 
     return all_endpoints_dict
