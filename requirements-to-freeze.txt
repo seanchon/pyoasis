@@ -1,0 +1,8 @@
+# see https://www.kennethreitz.org/essays/a-better-pip-workflow
+black
+cached-property
+pandas
+pdftotext
+pre-commit
+requests
+xmltodict
