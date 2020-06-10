@@ -3,8 +3,9 @@ import json
 import os
 from pytz import timezone
 import requests
+import time
 import xmltodict
-from zipfile import ZipFile
+from zipfile import BadZipfile, ZipFile
 
 
 # get location of oasis_endpoints.json file
@@ -12,17 +13,20 @@ FILE_DIR = os.path.dirname(os.path.realpath(__file__))
 OASIS_ENDPOINTS_JSON = FILE_DIR + "/oasis_endpoints.json"
 
 
-def format_datetime(datetime_, _timezone=timezone("US/Pacific")):
+def format_datetime(datetime_, timezone_=timezone("US/Pacific")):
     """
-    Converts datetime object to yyyymmddThh24:miZ format.
+    Converts datetime object to yyyymmddThh24:miZ format. CAISO OASIS only
+    accepts datetime timestamps in US/Pacific.
 
     :param datetime_: datetime object
-    :param timezone_: pytz.timezone object
+    :param timezone_: destination timezone (pytz.timezone)
     :return: yyyymmddThh24:miZ formatted string
     """
     # set timezone if datetime_ has no timezone
     if not datetime_.tzinfo:
-        datetime_ = _timezone.localize(datetime_)
+        datetime_ = timezone_.localize(datetime_)
+    else:
+        datetime_ = datetime_.astimezone(timezone_)
 
     return datetime_.strftime("%Y%m%dT%H:%M%z")
 
@@ -67,21 +71,33 @@ def create_oasis_url(report_name, start=None, end=None, query_params={}):
     return "http://" + oasis_url + "?" + querystring
 
 
-def download_files(url, destination_directory):
+def download_files(url, destination_directory, max_attempts=1):
     """
     Downloads zipped files from url and saves to destination_directory. Returns
     a list of absolute file locations.
 
     :param url: (string)
     :param destination_directory: (string)
+    :param max_attempts: maximum attempts to download file (int)
     :return: absolute paths of all files (list of strings)
     """
     destination_directory = os.path.abspath(os.path.expanduser(destination_directory))
 
-    # pull data from url and save to destination_directory
-    response = requests.get(url)
-    zipfile = ZipFile(BytesIO(response.content))
-    zipfile.extractall(destination_directory)
+    i = 1
+    success = False
+    while not success and i <= max_attempts:
+        try:
+            # pull data from url and save to destination_directory
+            response = requests.get(url)
+            zipfile = ZipFile(BytesIO(response.content))
+            zipfile.extractall(destination_directory)
+            success = True
+        except BadZipfile as e:
+            if i != max_attempts:
+                time.sleep(i)
+                i += 1
+            else:
+                raise e
 
     # return absolute paths of all files
     return [destination_directory + "/" + x for x in zipfile.namelist()]
@@ -96,6 +112,18 @@ def xml_to_dict(xml_path):
     """
     with open(xml_path) as f:
         return xmltodict.parse(f.read())
+
+
+def get_report_names():
+    """
+    Returns all possible report names.
+    """
+    with open(OASIS_ENDPOINTS_JSON) as f:
+        all_endpoints_dict = json.load(f)
+
+    return set(
+        all_endpoints_dict["oasis.caiso.com"]["/oasisapi/GroupZip"].keys()
+    ) | set(all_endpoints_dict["oasis.caiso.com"]["/oasisapi/SingleZip"].keys())
 
 
 def get_report_params(report_name):

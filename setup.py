@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pyoasis",
-    version="0.1.0",
+    version="0.2.0",
     description="""Python interface to CAISO's OASIS API.""",
     url="git@github.com:TerraVerdeRenewablePartners/pyoasis.git",
     author="Sean Chon",
