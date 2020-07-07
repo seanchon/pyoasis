@@ -1,6 +1,6 @@
 # pyoasis
 
-Python interface to CAISO's OASIS API.
+Python interface to CAISO's [OASIS API](http://oasis.caiso.com/mrioasis/logon.do).
 
 # SETUP
 
@@ -18,6 +18,8 @@ $ pip install git+ssh://git@github.com/TerraVerdeRenewablePartners/pyoasis.git
 ```
 
 # DOWNLOAD REPORTS
+
+The following functions aid in downloading single XML files as provided by CAISO. There are some limitations in the number of days that can be requested in a single query, which vary by report. To download a larger date range, see [DOWNLOAD MULTIPLE REPORTS](#download-multiple-reports).
 ```
 In [1]: from pyoasis.utils import create_oasis_url, download_files, get_report_params
    ...: from datetime import datetime, timedelta
@@ -49,6 +51,8 @@ Out[5]: ['./downloads/20200602_20200602_PRC_LMP_DAM_20200603_11_45_34_v1.xml']
 ```
 
 # PARSE REPORTS
+
+A class called `OASISReport` can be used to read the XML reports provided by CAISO in a pandas DataFrame format.
 ```
 In [1]: from pyoasis.report import OASISReport                                                                                                             
 
@@ -94,4 +98,38 @@ Out[6]:
 21       LMP_PRC  TH_NP15_GEN-APND  2020-06-03           19  2020-06-04T01:00:00-00:00  2020-06-04T02:00:00-00:00  99.90272
 
 [96 rows x 7 columns]
+```
+
+# DOWNLOAD MULTIPLE REPORTS
+
+The following function will download multiple reports, stitch them together into a single report, and save it as a CSV file.
+
+NOTE: There are some issues when querying the OASIS API repeatedly, which can cause this function to fail. Some endpoints allow specifying a `node`, which allows OASIS to return smaller reports that are filtered on the node. Another mechanism to address this is to decrease the `chunk_size` (fewer days in a single request) or increase the `max_attempts` (more attempts to download each constituent file).
+
+```
+In [1]: from datetime import datetime, timedelta                                                                                                           
+
+In [2]: import pandas as pd                                                                                                      
+
+In [3]: from pyoasis.repeat_calls import fetch_report                                                                                                      
+
+In [4]: fetch_report(report_name="PRC_LMP", query_params={'node': "TH_NP15_GEN-APND", 'market_run_id': 'DAM', 'version': 1}, start=datetime(2019, 1, 1), end_limit=datetime(2019, 2, 1), chunk_size=timedelta(days=15), max_attempts=10, destination_directory="caiso_downloads")                                                                      
+Out[4]: '.../caiso_downloads/20190101-0000_20190201-0000_PRC_LMP.csv'
+
+In [5]: pd.read_csv(".../caiso_downloads/20190101-0000_20190201-0000_PRC_LMP.csv")                                 
+Out[5]:
+      Unnamed: 0     DATA_ITEM     RESOURCE_NAME    OPR_DATE  INTERVAL_NUM         INTERVAL_START_GMT           INTERVAL_END_GMT     VALUE
+0             27  LMP_CONG_PRC  TH_NP15_GEN-APND  2019-01-01             1  2019-01-01 08:00:00+00:00  2019-01-01 09:00:00+00:00   0.00000
+1             28  LMP_CONG_PRC  TH_NP15_GEN-APND  2019-01-01             2  2019-01-01 09:00:00+00:00  2019-01-01 10:00:00+00:00   0.00000
+2             34  LMP_CONG_PRC  TH_NP15_GEN-APND  2019-01-01             3  2019-01-01 10:00:00+00:00  2019-01-01 11:00:00+00:00   0.00000
+3             35  LMP_CONG_PRC  TH_NP15_GEN-APND  2019-01-01             4  2019-01-01 11:00:00+00:00  2019-01-01 12:00:00+00:00   0.00000
+4             38  LMP_CONG_PRC  TH_NP15_GEN-APND  2019-01-01             5  2019-01-01 12:00:00+00:00  2019-01-01 13:00:00+00:00   0.00000
+...          ...           ...               ...         ...           ...                        ...                        ...       ...
+2971          10       LMP_PRC  TH_NP15_GEN-APND  2019-01-31            20  2019-02-01 03:00:00+00:00  2019-02-01 04:00:00+00:00  53.29588
+2972           1       LMP_PRC  TH_NP15_GEN-APND  2019-01-31            21  2019-02-01 04:00:00+00:00  2019-02-01 05:00:00+00:00  48.09075
+2973          11       LMP_PRC  TH_NP15_GEN-APND  2019-01-31            22  2019-02-01 05:00:00+00:00  2019-02-01 06:00:00+00:00  43.19151
+2974          15       LMP_PRC  TH_NP15_GEN-APND  2019-01-31            23  2019-02-01 06:00:00+00:00  2019-02-01 07:00:00+00:00  41.65750
+2975          21       LMP_PRC  TH_NP15_GEN-APND  2019-01-31            24  2019-02-01 07:00:00+00:00  2019-02-01 08:00:00+00:00  39.41805
+
+[2976 rows x 8 columns]
 ```
