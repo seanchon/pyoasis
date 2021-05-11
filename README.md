@@ -14,7 +14,7 @@ $ source <env_name>/bin/activate
 
 The following step should be followed if installing this package in another project.
 ```
-$ pip install git+ssh://git@github.com/TerraVerdeRenewablePartners/pyoasis.git
+$ pip install git+ssh://git@github.com/MCE-Clean-Energy/pyoasis.git
 ```
 
 # DOWNLOAD REPORTS
